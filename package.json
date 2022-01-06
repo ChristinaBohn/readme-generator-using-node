@@ -1,23 +1,14 @@
 {
-  "name": "readme-generator-using-node",
+  "name": "static-site",
   "version": "1.0.0",
-  "description": "This is a command-line application that will allow the user to generate a README.md file using Node.js",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ChristinaBohn/readme-generator-using-node.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ChristinaBohn/readme-generator-using-node/issues"
-  },
-  "homepage": "https://github.com/ChristinaBohn/readme-generator-using-node#readme",
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^6.3.1"
   }
 }
