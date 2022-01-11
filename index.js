@@ -12,18 +12,33 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Enter a description:',
+        message: 'Enter a description. What was your motivation? What did you learn?',
         name: 'description',
     },
     {
         type: 'input',
-        message: 'Enter content for your bio:',
-        name: 'bio',
+        message: 'What steps are required to install your application?',
+        name: 'installation',
     },
     {
         type: 'input',
-        message: 'What is your LinkedIn URL?',
-        name: 'linkedin'
+        message: 'Provide instructions and examples for use:',
+        name: 'usage'
+    },
+    {
+        type: 'checkbox',
+        message: 'Choose a license:',
+        name: 'license'
+    },
+    {
+        type: 'input',
+        message: 'Enter your contribution guidelines:',
+        name: 'contributing'
+    },
+    {
+        type: 'input',
+        message: 'Provide instructions on how to run tests for your application:',
+        name: 'tests'
     },
     {
         type: 'input',
@@ -32,8 +47,8 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Enter the url or file path for a preview image for your project here:',
-        name: 'github'
+        message: 'What is your email?',
+        name: 'email'
     }
 ];
 
