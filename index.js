@@ -7,57 +7,57 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 const questions = [
     {
         type: 'input',
-        message: 'What is the title of your project?',
         name: 'title',
+        message: 'What is the title of your project?'
     },
     {
         type: 'input',
-        message: 'Enter a description. What was your motivation? What did you learn?',
         name: 'description',
+        message: 'Enter a description. What was your motivation? What did you learn?'
     },
     {
         type: 'input',
-        message: 'What steps or commands are required to install your application?',
         name: 'installation',
+        message: 'What steps or commands are required to install your application?'
     },
     {
         type: 'input',
-        message: 'Provide instructions and examples for use:',
-        name: 'usage'
+        name: 'usage',
+        message: 'Provide instructions and examples for use:'
     },
     {
         type: 'list',
-        message: 'Choose a license for your project:',
         name: 'license',
+        message: 'Choose a license for your project:',
         choices: ['MIT', 'Apache_2.0', 'GPL_3.0', 'BSD_3', 'None']
     },
     {
         type: 'input',
-        message: 'Enter any contribution guidelines:',
-        name: 'contributing'
+        name: 'contributing',
+        message: 'Enter any contribution guidelines:'
     },
     {
         type: 'input',
-        message: 'Provide instructions on how to run tests for your application:',
-        name: 'tests'
+        name: 'tests',
+        message: 'Provide instructions on how to run tests for your application:'
     },
     {
         type: 'input',
+        name: 'github',
         message: 'What is your GitHub URL?',
-        name: 'github'
     },
     {
         type: 'input',
+        name: 'email',
         message: 'What is your email?',
-        name: 'email'
     }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(filename, data) {
-    fs.writeToFile( filename, data, (err) =>
+function writeToFile( filename, data ) {
+    fs.writeFileSync( filename, data, (err) =>
     
-    err ? console.error(err) : console.log('Your README.md has been created successfully!')
+    err ? console.error(err) : console.log( 'Your README.md has been created successfully!' )
     );
 }
 
@@ -67,7 +67,7 @@ function init() {
         .prompt( questions )
         .then( answers => {
             const userData = generateMarkdown( answers );
-            writeToFile( 'README.md', userData )
+            writeToFile( 'sample-README.md', userData )
             console.log( answers );
         })
 }
