@@ -20,11 +20,11 @@ function generateMarkdown(data) {
   ## Table of Contents
 
     - [Installation](#installation)
-    - Usage
-    - License
-    - Contributing
-    - Tests
-    - Questions
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
 
   ## Installation
     ${data.installation}
@@ -33,6 +33,8 @@ function generateMarkdown(data) {
     ${data.usage}
 
   ## License
+    ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
+  
     ${data.license}
 
   ## Contributing

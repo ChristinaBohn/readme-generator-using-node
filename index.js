@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./generateMarkdown.js')
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -17,7 +17,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What steps are required to install your application?',
+        message: 'What steps or commands are required to install your application?',
         name: 'installation',
     },
     {
@@ -26,13 +26,14 @@ const questions = [
         name: 'usage'
     },
     {
-        type: 'checkbox',
-        message: 'Choose a license:',
-        name: 'license'
+        type: 'list',
+        message: 'Choose a license for your project:',
+        name: 'license',
+        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
     },
     {
         type: 'input',
-        message: 'Enter your contribution guidelines:',
+        message: 'Enter any contribution guidelines:',
         name: 'contributing'
     },
     {
