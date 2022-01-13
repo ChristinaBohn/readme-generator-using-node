@@ -1,38 +1,33 @@
-# as
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+# README.md Generator
 
 ## Description
-  as
 
-## Table of Contents
-
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
-
-## Installation
-  as
-
-## Usage
-  aas
+This is a command-line application that will allow the user to generate a README.md file for an application, using Inquirer in Node.js. The user will be prompted for infomation regarding their project and a markdown file will be created, filling a template for a README.md file containing the given information.
 
 ## License
 
-This project is licensed under MIT
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Contributing
-  
+## Technologies Used
 
-## Tests
-  as
+    * Javascript
+    * Node.js
+    * Inquirer
 
-## Questions
 
-Find me on Github at as
+## What I Learned
 
-If you have any questions, contact me at as
+I appreciate the ease of using template literals to structure and print text. I first created a sample README.md file containing all of the headers and content needed, and then could copy and paste each part where it was needed into the code.
 
+I learned the importance and usefulness of documentation for resources like Inquirer. There were many options available for questions - I was easily able to find the best fit for the information I wanted to gather to build a README.
+
+One challege I faced was accidentally pushing up a copy of a generated README file, writing over the README for this repo, because of a mistake in naming the new file in the index.js file. This was fixed by adding "sample-" in front of the new README.md file name.
+
+## URL for GitHub Repo
+
+https://github.com/ChristinaBohn/readme-generator-using-node
+
+## README.md Generator Walkthrough
+
+## Sample Generated README.md
   
