@@ -23,11 +23,24 @@ I learned the importance and usefulness of documentation for resources like Inqu
 
 One challege I faced was accidentally pushing up a copy of a generated README file, writing over the README for this repo, because of a mistake in naming the new file in the index.js file. This was fixed by adding "sample-" in front of the new README.md file name.
 
+## Usage
+
+You can run this application by typing the following into your terminal:
+
+```
+node index.js
+```
+And then follow the prompts to enter the content you wish to include in your README.
+
+## README.md Generator Walkthrough
+
+https://watch.screencastify.com/v/8G9C8RZtRK31LQEXhAqh
+
 ## URL for GitHub Repo
 
 https://github.com/ChristinaBohn/readme-generator-using-node
 
-## README.md Generator Walkthrough
-
 ## Sample Generated README.md
+
+![Generaged README preview](images/README-preview.png)
   
