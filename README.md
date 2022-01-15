@@ -25,7 +25,12 @@ One challege I faced was accidentally pushing up a copy of a generated README fi
 
 ## Usage
 
-You can run this application by typing the following into your terminal:
+You will begin by typing the following into your terminal, to install the inquirer dependency:
+
+```
+npm i
+```
+And then to run the application:
 
 ```
 node index.js
